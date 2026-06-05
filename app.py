@@ -4,9 +4,14 @@ import streamlit as st
 from data_pipeline.filters.query import (
     ALLOWED_ALLERGENS,
     CULTURAL_PRESETS,
+    TREE_NUTS_SPECIFIC,
     filter_foods,
+    get_allergen_confidence,
+    get_allergen_severity,
     get_diet_exclude_keywords,
     get_diet_violations,
+    get_tree_nuts_options,
+    is_tree_nut,
 )
 from data_pipeline.meal_planner import MealPlanner, NutritionGoals, get_rda_targets
 
@@ -397,12 +402,44 @@ with tab1:
             key="diet_tab1"
         )
 
-    allergies = st.multiselect(
-        "Known allergies/intolerances",
-        sorted(ALLOWED_ALLERGENS | {"pork"}),
-        default=[],
-        key="allergies_tab1"
-    )
+    st.markdown("##### Select Allergies/Intolerances")
+    col_allergy1, col_allergy2 = st.columns(2)
+    
+    # Build allergen options with severity indicators
+    allergen_options_tab1 = []
+    for allergen in sorted(ALLOWED_ALLERGENS | {"pork"}):
+        if allergen == "tree_nuts":
+            continue  # Skip generic, we'll handle specificity separately
+        severity_info = get_allergen_severity(allergen)
+        emoji = severity_info["emoji"]
+        severity = severity_info["severity"]
+        label = f"{emoji} {allergen.replace('_', ' ').title()} ({severity})"
+        allergen_options_tab1.append((allergen, label))
+    
+    # Sort by severity (SEVERE first)
+    allergen_options_tab1.sort(key=lambda x: (x[1][0] != "🔴", x[0]))
+    
+    with col_allergy1:
+        allergies = st.multiselect(
+            "Allergens/Intolerances",
+            [opt[0] for opt in allergen_options_tab1],
+            format_func=lambda x: next(label for a, label in allergen_options_tab1 if a == x),
+            default=[],
+            key="allergies_tab1"
+        )
+    
+    # Specific tree nut selection
+    with col_allergy2:
+        selected_tree_nuts = st.multiselect(
+            "Specific tree nuts (optional)",
+            sorted(TREE_NUTS_SPECIFIC.keys()),
+            format_func=lambda x: x.replace("_", " ").title(),
+            default=[],
+            key="tree_nuts_tab1",
+            help="Select specific nuts you're allergic to, or leave empty to allow all nuts"
+        )
+        if selected_tree_nuts:
+            allergies.extend(selected_tree_nuts)
 
     st.markdown("---")
 
@@ -483,7 +520,12 @@ with tab1:
                 st.write(profile_details)
                 if allergies or dietary_allergens:
                     combined = combined_allergens
-                    st.write(f"**Allergies/Intolerances:** {', '.join(combined)}")
+                    # Show severity indicators for selected allergens
+                    allergen_display = []
+                    for allergen in combined:
+                        severity_info = get_allergen_severity(allergen)
+                        allergen_display.append(f"{severity_info['emoji']} {allergen.replace('_', ' ').title()}")
+                    st.write(f"**Allergies/Intolerances:** {', '.join(allergen_display)}")
                 if special_notes:
                     st.write(f"**Special restrictions:** {', '.join(special_notes)}")
                 
@@ -497,7 +539,7 @@ with tab1:
                         "Carbs": f["carbs"],
                         "Fat": f["fat"],
                         "Fiber": f["fiber"],
-                        "Allergens": f["allergens"],
+                        "Allergens (USDA tag)": f["allergens"],
                         "GI": f["glycemic_index"],
                         "High FODMAP": bool(f["is_high_fodmap"]),
                         "GERD Trigger": bool(f["is_gerd_trigger"]),
@@ -505,6 +547,15 @@ with tab1:
                     for f in filtered_foods
                 ]
                 st.dataframe(df, use_container_width=True)
+                
+                # Show allergen detection confidence for reference
+                with st.expander("📊 Allergen Detection Confidence Guide"):
+                    st.write("**Detection Methods:**")
+                    confidence_guide = [
+                        {"Method": "USDA Certified Tag", "Confidence": "100%", "Description": "Food database allergen tag"},
+                        {"Method": "Keyword Match", "Confidence": "80%", "Description": "Description contains allergen keyword"},
+                    ]
+                    st.dataframe(confidence_guide, use_container_width=True)
             else:
                 st.warning("No foods matched your profile and filter settings.")
         except Exception as exc:

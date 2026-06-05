@@ -5,636 +5,6 @@
         {
           "slot": "breakfast",
           "fdc_id": 167585,
-          "description": "Ice creams, chocolate, light + Protein supplement, milk based, Muscle Milk Light, powder",
-          "category": "Sweets + Dairy and Egg Products",
-          "dietary": null,
-          "calories": 575.7,
-          "protein": 35.1,
-          "items": [
-            {
-              "description": "Ice creams, chocolate, light",
-              "serving_g": 202,
-              "calories": 377.7
-            },
-            {
-              "description": "Protein supplement, milk based, Muscle Milk Light, powder",
-              "serving_g": 50,
-              "calories": 198.0
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 2708606,
-          "description": "Fajita, shrimp + Fish, halibut, Atlantic and Pacific, raw",
-          "category": "Other Mexican mixed dishes + Finfish and Shellfish Products",
-          "dietary": null,
-          "calories": 754.8,
-          "protein": 69.7,
-          "items": [
-            {
-              "description": "Fajita, shrimp",
-              "serving_g": 279,
-              "calories": 527.3
-            },
-            {
-              "description": "Fish, halibut, Atlantic and Pacific, raw",
-              "serving_g": 250,
-              "calories": 227.5
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 175008,
-          "description": "Pancakes, plain, dry mix, incomplete, prepared + 10 FLUTED TART ROUND SWEET FROZEN 9\"",
-          "category": "Baked Products + Sweet Bakery Products",
-          "dietary": null,
-          "calories": 664.9,
-          "protein": 31.7,
-          "items": [
-            {
-              "description": "Pancakes, plain, dry mix, incomplete, prepared",
-              "serving_g": 305,
-              "calories": 664.9
-            },
-            {
-              "description": "10 FLUTED TART ROUND SWEET FROZEN 9\"",
-              "serving_g": 100,
-              "calories": 0.0
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1995.4,
-        "protein": 136.5,
-        "carbs": 202.2,
-        "fat": 98.2,
-        "fiber": 14.4,
-        "sodium": 3251.0,
-        "potassium": 2934.0,
-        "glycemic_load": 36.5
-      },
-      "scores": {
-        "overall": 92.6,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 67.6,
-        "diversity": 87.8,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 69.7
-      },
-      "category_breakdown": {},
-      "rda_flags": [],
-      "priority_rda_flags": [],
-      "generation_ms": 471.5
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 167572,
-          "description": "Ice creams, vanilla, light + Spices, basil, dried",
-          "category": "Sweets + Spices and Herbs",
-          "dietary": null,
-          "calories": 553.3,
-          "protein": 27.5,
-          "items": [
-            {
-              "description": "Ice creams, vanilla, light",
-              "serving_g": 209,
-              "calories": 376.2
-            },
-            {
-              "description": "Spices, basil, dried",
-              "serving_g": 76,
-              "calories": 177.1
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 167945,
-          "description": "Focaccia, Italian flatbread, plain + Fish, eel, mixed species, raw",
-          "category": "Baked Products + Finfish and Shellfish Products",
-          "dietary": null,
-          "calories": 776.3,
-          "protein": 43.4,
-          "items": [
-            {
-              "description": "Focaccia, Italian flatbread, plain",
-              "serving_g": 212,
-              "calories": 527.9
-            },
-            {
-              "description": "Fish, eel, mixed species, raw",
-              "serving_g": 135,
-              "calories": 248.4
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 172109,
-          "description": "Lean Pockets, Meatballs & Mozzarella",
-          "category": "Meals, Entrees, and Side Dishes",
-          "dietary": null,
-          "calories": 664.8,
-          "protein": 29.1,
-          "items": [
-            {
-              "description": "Lean Pockets, Meatballs & Mozzarella",
-              "serving_g": 277,
-              "calories": 664.8
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1994.4,
-        "protein": 100.0,
-        "carbs": 263.4,
-        "fat": 67.0,
-        "fiber": 38.6,
-        "sodium": 3014.0,
-        "potassium": 3655.0,
-        "glycemic_load": 60.8
-      },
-      "scores": {
-        "overall": 95.2,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 80.7,
-        "diversity": 88.2,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 81.4
-      },
-      "category_breakdown": {},
-      "rda_flags": [],
-      "priority_rda_flags": [],
-      "generation_ms": 482.9
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 169029,
-          "description": "Restaurant, family style, spaghetti and meatballs + Spices, coriander leaf, dried",
-          "category": "Restaurant Foods + Spices and Herbs",
-          "dietary": null,
-          "calories": 553.2,
-          "protein": 31.2,
-          "items": [
-            {
-              "description": "Restaurant, family style, spaghetti and meatballs",
-              "serving_g": 222,
-              "calories": 377.4
-            },
-            {
-              "description": "Spices, coriander leaf, dried",
-              "serving_g": 63,
-              "calories": 175.8
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 173345,
-          "description": "Corn dogs, frozen, prepared + Fish, catfish, channel, wild, raw",
-          "category": "Meals, Entrees, and Side Dishes + Finfish and Shellfish Products",
-          "dietary": null,
-          "calories": 765.0,
-          "protein": 59.1,
-          "items": [
-            {
-              "description": "Corn dogs, frozen, prepared",
-              "serving_g": 211,
-              "calories": 527.5
-            },
-            {
-              "description": "Fish, catfish, channel, wild, raw",
-              "serving_g": 250,
-              "calories": 237.5
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 172763,
-          "description": "French toast, frozen, ready-to-heat",
-          "category": "Baked Products",
-          "dietary": null,
-          "calories": 664.6,
-          "protein": 23.1,
-          "items": [
-            {
-              "description": "French toast, frozen, ready-to-heat",
-              "serving_g": 312,
-              "calories": 664.6
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1982.8,
-        "protein": 113.4,
-        "carbs": 224.4,
-        "fat": 73.2,
-        "fiber": 15.4,
-        "sodium": 3974.0,
-        "potassium": 4850.0,
-        "glycemic_load": 0.0
-      },
-      "scores": {
-        "overall": 94.0,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 78.2,
-        "diversity": 87.8,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 56.3
-      },
-      "category_breakdown": {},
-      "rda_flags": [],
-      "priority_rda_flags": [],
-      "generation_ms": 264.9
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 2708332,
-          "description": "French toast, frozen + Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified",
-          "category": "Pancakes, waffles, French toast + Baby Foods",
-          "dietary": null,
-          "calories": 575.0,
-          "protein": 20.4,
-          "items": [
-            {
-              "description": "French toast, frozen",
-              "serving_g": 206,
-              "calories": 377.0
-            },
-            {
-              "description": "Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified",
-              "serving_g": 50,
-              "calories": 198.0
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 2708331,
-          "description": "French toast, NFS + Beverages, Dairy drink mix, chocolate, reduced calorie, with low-calorie sweeteners, powder",
-          "category": "Pancakes, waffles, French toast + Beverages",
-          "dietary": null,
-          "calories": 776.9,
-          "protein": 39.0,
-          "items": [
-            {
-              "description": "French toast, NFS",
-              "serving_g": 193,
-              "calories": 526.9
-            },
-            {
-              "description": "Beverages, Dairy drink mix, chocolate, reduced calorie, with low-calorie sweeteners, powder",
-              "serving_g": 76,
-              "calories": 250.0
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 172763,
-          "description": "French toast, frozen, ready-to-heat",
-          "category": "Baked Products",
-          "dietary": null,
-          "calories": 664.6,
-          "protein": 23.1,
-          "items": [
-            {
-              "description": "French toast, frozen, ready-to-heat",
-              "serving_g": 312,
-              "calories": 664.6
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 2016.5,
-        "protein": 82.5,
-        "carbs": 300.1,
-        "fat": 54.1,
-        "fiber": 18.6,
-        "sodium": 3140.0,
-        "potassium": 2916.0,
-        "glycemic_load": 101.8
-      },
-      "scores": {
-        "overall": 95.2,
-        "calorie_fit": 99.8,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 83.0,
-        "diversity": 87.0,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 72.4
-      },
-      "category_breakdown": {},
-      "rda_flags": [],
-      "priority_rda_flags": [],
-      "generation_ms": 437.4
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 2706815,
-          "description": "Chicken or turkey, breaded, fried, garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing + Spices, coriander leaf, dried",
-          "category": "Poultry mixed dishes + Spices and Herbs",
-          "dietary": null,
-          "calories": 553.4,
-          "protein": 33.8,
-          "items": [
-            {
-              "description": "Chicken or turkey, breaded, fried, garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing",
-              "serving_g": 307,
-              "calories": 377.6
-            },
-            {
-              "description": "Spices, coriander leaf, dried",
-              "serving_g": 63,
-              "calories": 175.8
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 168264,
-          "description": "Pork, fresh, variety meats and by-products, brain, raw + Mushroom, white, exposed to ultraviolet light, raw",
-          "category": "Pork Products + Vegetables and Vegetable Products",
-          "dietary": null,
-          "calories": 777.6,
-          "protein": 66.3,
-          "items": [
-            {
-              "description": "Pork, fresh, variety meats and by-products, brain, raw",
-              "serving_g": 569,
-              "calories": 722.6
-            },
-            {
-              "description": "Mushroom, white, exposed to ultraviolet light, raw",
-              "serving_g": 250,
-              "calories": 55.0
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 2706745,
-          "description": "Beef, tofu, and vegetables excluding carrots, broccoli,  and dark-green leafy; no potatoes, soy-based sauce",
-          "category": "Stir-fry and soy-based sauce mixtures",
-          "dietary": null,
-          "calories": 58.5,
-          "protein": 3.8,
-          "items": [
-            {
-              "description": "Beef, tofu, and vegetables excluding carrots, broccoli,  and dark-green leafy; no potatoes, soy-based sauce",
-              "serving_g": 50,
-              "calories": 58.5
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1389.5,
-        "protein": 103.9,
-        "carbs": 63.0,
-        "fat": 84.6,
-        "fiber": 13.6,
-        "sodium": 1609.0,
-        "potassium": 5978.0,
-        "glycemic_load": 22.4
-      },
-      "scores": {
-        "overall": 0.0,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 73.8,
-        "diversity": 92.1,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 95.6
-      },
-      "category_breakdown": {},
-      "rda_flags": [
-        {
-          "nutrient": "Calories",
-          "actual": 1389.5,
-          "target": 2000,
-          "percent": 69.5,
-          "threshold": 1600.0
-        },
-        {
-          "nutrient": "Carbs",
-          "actual": 63.0,
-          "target": 225.0,
-          "percent": 28.0,
-          "threshold": 180.0
-        }
-      ],
-      "priority_rda_flags": [],
-      "generation_ms": 525.6
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 172313,
-          "description": "Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed + Lambsquarters, raw (Northern Plains Indians)",
-          "category": "Baby Foods + American Indian/Alaska Native Foods",
-          "dietary": null,
-          "calories": 555.1,
-          "protein": 23.1,
-          "items": [
-            {
-              "description": "Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed",
-              "serving_g": 442,
-              "calories": 437.6
-            },
-            {
-              "description": "Lambsquarters, raw (Northern Plains Indians)",
-              "serving_g": 250,
-              "calories": 117.5
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 2705750,
-          "description": "Cheese, Ricotta + Mushrooms, brown, italian, or crimini, exposed to ultraviolet light, raw",
-          "category": "Cottage/ricotta cheese + Vegetables and Vegetable Products",
-          "dietary": null,
-          "calories": 777.2,
-          "protein": 53.0,
-          "items": [
-            {
-              "description": "Cheese, Ricotta",
-              "serving_g": 488,
-              "calories": 722.2
-            },
-            {
-              "description": "Mushrooms, brown, italian, or crimini, exposed to ultraviolet light, raw",
-              "serving_g": 250,
-              "calories": 55.0
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 2707889,
-          "description": "Cake, tres leche",
-          "category": "Cakes and pies",
-          "dietary": null,
-          "calories": 664.2,
-          "protein": 15.7,
-          "items": [
-            {
-              "description": "Cake, tres leche",
-              "serving_g": 246,
-              "calories": 664.2
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1996.5,
-        "protein": 91.8,
-        "carbs": 210.3,
-        "fat": 89.5,
-        "fiber": 18.0,
-        "sodium": 864.0,
-        "potassium": 6191.0,
-        "glycemic_load": 0.0
-      },
-      "scores": {
-        "overall": 97.4,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 90.0,
-        "diversity": 88.2,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 100.0
-      },
-      "category_breakdown": {},
-      "rda_flags": [],
-      "priority_rda_flags": [],
-      "generation_ms": 452.4
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 172313,
-          "description": "Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed + Lambsquarters, raw (Northern Plains Indians)",
-          "category": "Baby Foods + American Indian/Alaska Native Foods",
-          "dietary": null,
-          "calories": 555.1,
-          "protein": 23.1,
-          "items": [
-            {
-              "description": "Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed",
-              "serving_g": 442,
-              "calories": 437.6
-            },
-            {
-              "description": "Lambsquarters, raw (Northern Plains Indians)",
-              "serving_g": 250,
-              "calories": 117.5
-            }
-          ]
-        },
-        {
-          "slot": "lunch",
-          "fdc_id": 171275,
-          "description": "Milk, canned, condensed, sweetened + Vitasoy USA Organic Nasoya, Tofu Plus Firm",
-          "category": "Dairy and Egg Products + Legumes and Legume Products",
-          "dietary": null,
-          "calories": 775.6,
-          "protein": 37.6,
-          "items": [
-            {
-              "description": "Milk, canned, condensed, sweetened",
-              "serving_g": 184,
-              "calories": 590.6
-            },
-            {
-              "description": "Vitasoy USA Organic Nasoya, Tofu Plus Firm",
-              "serving_g": 250,
-              "calories": 185.0
-            }
-          ]
-        },
-        {
-          "slot": "dinner",
-          "fdc_id": 2708606,
-          "description": "Fajita, shrimp",
-          "category": "Other Mexican mixed dishes",
-          "dietary": null,
-          "calories": 438.5,
-          "protein": 19.3,
-          "items": [
-            {
-              "description": "Fajita, shrimp",
-              "serving_g": 232,
-              "calories": 438.5
-            }
-          ]
-        }
-      ],
-      "totals": {
-        "calories": 1769.2,
-        "protein": 80.0,
-        "carbs": 213.9,
-        "fat": 67.0,
-        "fiber": 21.3,
-        "sodium": 1478.0,
-        "potassium": 4746.0,
-        "glycemic_load": 40.7
-      },
-      "scores": {
-        "overall": 98.3,
-        "calorie_fit": 100.0,
-        "protein_fit": 100.0,
-        "variety": 100.0,
-        "health": 94.0,
-        "diversity": 92.1,
-        "glycemic_load": 100.0,
-        "sodium_potassium": 100.0
-      },
-      "category_breakdown": {},
-      "rda_flags": [
-        {
-          "nutrient": "Vitamin D",
-          "actual": 11.9,
-          "target": 15,
-          "percent": 79.3,
-          "threshold": 12.0
-        }
-      ],
-      "priority_rda_flags": [],
-      "generation_ms": 316.9
-    },
-    {
-      "meals": [
-        {
-          "slot": "breakfast",
-          "fdc_id": 167585,
           "description": "Ice creams, chocolate, light + Parsley, freeze-dried",
           "category": "Sweets + Vegetables and Vegetable Products",
           "dietary": null,
@@ -4618,6 +3988,677 @@
       "rda_flags": [],
       "priority_rda_flags": [],
       "generation_ms": 3135.1
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 167585,
+          "description": "Ice creams, chocolate, light + Babyfood, cereal, oatmeal, dry fortified",
+          "category": "Sweets + Baby Foods",
+          "dietary": null,
+          "calories": 574.7,
+          "protein": 15.6,
+          "items": [
+            {
+              "description": "Ice creams, chocolate, light",
+              "serving_g": 202,
+              "calories": 377.7
+            },
+            {
+              "description": "Babyfood, cereal, oatmeal, dry fortified",
+              "serving_g": 50,
+              "calories": 197.0
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 2706480,
+          "description": "Beef and noodles, no sauce + Flour, coconut + Vitasoy USA, Nasoya Lite Firm Tofu",
+          "category": "Meat mixed dishes + Nut and Seed Products + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 777.6,
+          "protein": 75.6,
+          "items": [
+            {
+              "description": "Beef and noodles, no sauce",
+              "serving_g": 340,
+              "calories": 642.6
+            },
+            {
+              "description": "Flour, coconut",
+              "serving_g": 100,
+              "calories": 0.0
+            },
+            {
+              "description": "Vitasoy USA, Nasoya Lite Firm Tofu",
+              "serving_g": 250,
+              "calories": 135.0
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2708342,
+          "description": "Crepe, plain",
+          "category": "Pancakes, waffles, French toast",
+          "dietary": null,
+          "calories": 665.3,
+          "protein": 26.3,
+          "items": [
+            {
+              "description": "Crepe, plain",
+              "serving_g": 297,
+              "calories": 665.3
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 2017.6,
+        "protein": 117.5,
+        "carbs": 271.4,
+        "fat": 99.3,
+        "fiber": 45.4,
+        "sodium": 2393.0,
+        "potassium": 3635.0,
+        "glycemic_load": 53.1
+      },
+      "scores": {
+        "overall": 95.3,
+        "calorie_fit": 99.8,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 78.8,
+        "diversity": 87.8,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 97.6
+      },
+      "category_breakdown": {},
+      "rda_flags": [],
+      "priority_rda_flags": [],
+      "generation_ms": 651.0
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 2705683,
+          "description": "Flan + Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified",
+          "category": "Pudding + Baby Foods",
+          "dietary": null,
+          "calories": 575.4,
+          "protein": 16.6,
+          "items": [
+            {
+              "description": "Flan",
+              "serving_g": 212,
+              "calories": 377.4
+            },
+            {
+              "description": "Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified",
+              "serving_g": 50,
+              "calories": 198.0
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 173282,
+          "description": "DOMINO'S 14\" Cheese Pizza, Classic Hand-Tossed Crust + Soy meal, defatted, raw",
+          "category": "Fast Foods + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 776.2,
+          "protein": 58.5,
+          "items": [
+            {
+              "description": "DOMINO'S 14\" Cheese Pizza, Classic Hand-Tossed Crust",
+              "serving_g": 205,
+              "calories": 526.8
+            },
+            {
+              "description": "Soy meal, defatted, raw",
+              "serving_g": 74,
+              "calories": 249.4
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2707612,
+          "description": "Focaccia, Italian, plain + SILK Light Plain, soymilk",
+          "category": "Yeast breads + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 665.1,
+          "protein": 27.1,
+          "items": [
+            {
+              "description": "Focaccia, Italian, plain",
+              "serving_g": 238,
+              "calories": 592.6
+            },
+            {
+              "description": "SILK Light Plain, soymilk",
+              "serving_g": 250,
+              "calories": 72.5
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 2016.7,
+        "protein": 102.2,
+        "carbs": 284.9,
+        "fat": 54.7,
+        "fiber": 13.3,
+        "sodium": 2889.0,
+        "potassium": 3323.0,
+        "glycemic_load": 91.6
+      },
+      "scores": {
+        "overall": 96.2,
+        "calorie_fit": 99.8,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 86.3,
+        "diversity": 88.2,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 83.7
+      },
+      "category_breakdown": {},
+      "rda_flags": [],
+      "priority_rda_flags": [],
+      "generation_ms": 768.8
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 2705683,
+          "description": "Flan + Babyfood, cereal, oatmeal, dry fortified",
+          "category": "Pudding + Baby Foods",
+          "dietary": null,
+          "calories": 574.4,
+          "protein": 16.6,
+          "items": [
+            {
+              "description": "Flan",
+              "serving_g": 212,
+              "calories": 377.4
+            },
+            {
+              "description": "Babyfood, cereal, oatmeal, dry fortified",
+              "serving_g": 50,
+              "calories": 197.0
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 169851,
+          "description": "OLIVE GARDEN, lasagna classico + Beans, cannellini, dry + SILK Light Plain, soymilk",
+          "category": "Restaurant Foods + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 777.2,
+          "protein": 71.1,
+          "items": [
+            {
+              "description": "OLIVE GARDEN, lasagna classico",
+              "serving_g": 383,
+              "calories": 704.7
+            },
+            {
+              "description": "Beans, cannellini, dry",
+              "serving_g": 100,
+              "calories": 0.0
+            },
+            {
+              "description": "SILK Light Plain, soymilk",
+              "serving_g": 250,
+              "calories": 72.5
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2707889,
+          "description": "Cake, tres leche",
+          "category": "Cakes and pies",
+          "dietary": null,
+          "calories": 664.2,
+          "protein": 15.7,
+          "items": [
+            {
+              "description": "Cake, tres leche",
+              "serving_g": 246,
+              "calories": 664.2
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 2015.8,
+        "protein": 103.4,
+        "carbs": 307.4,
+        "fat": 80.6,
+        "fiber": 11.4,
+        "sodium": 2377.0,
+        "potassium": 3738.0,
+        "glycemic_load": 97.0
+      },
+      "scores": {
+        "overall": 97.7,
+        "calorie_fit": 99.9,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 93.0,
+        "diversity": 87.8,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 98.0
+      },
+      "category_breakdown": {},
+      "rda_flags": [],
+      "priority_rda_flags": [],
+      "generation_ms": 647.7
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 2708036,
+          "description": "Crepe, chocolate filled + Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Energy Bar, all flavors",
+          "category": "Pancakes, waffles, French toast + Snacks",
+          "dietary": null,
+          "calories": 570.4,
+          "protein": 21.7,
+          "items": [
+            {
+              "description": "Crepe, chocolate filled",
+              "serving_g": 222,
+              "calories": 377.4
+            },
+            {
+              "description": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Energy Bar, all flavors",
+              "serving_g": 50,
+              "calories": 193.0
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 2707934,
+          "description": "Cookie, ladyfinger + Flour, soy, defatted",
+          "category": "Cookies and brownies + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 774.5,
+          "protein": 50.0,
+          "items": [
+            {
+              "description": "Cookie, ladyfinger",
+              "serving_g": 144,
+              "calories": 525.6
+            },
+            {
+              "description": "Flour, soy, defatted",
+              "serving_g": 68,
+              "calories": 248.9
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2707889,
+          "description": "Cake, tres leche + Vitasoy USA Organic Nasoya, Tofu Plus Firm",
+          "category": "Cakes and pies + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 635.9,
+          "protein": 33.7,
+          "items": [
+            {
+              "description": "Cake, tres leche",
+              "serving_g": 167,
+              "calories": 450.9
+            },
+            {
+              "description": "Vitasoy USA Organic Nasoya, Tofu Plus Firm",
+              "serving_g": 250,
+              "calories": 185.0
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 1980.8,
+        "protein": 105.4,
+        "carbs": 258.8,
+        "fat": 58.3,
+        "fiber": 7.7,
+        "sodium": 1019.0,
+        "potassium": 2742.0,
+        "glycemic_load": 34.2
+      },
+      "scores": {
+        "overall": 97.8,
+        "calorie_fit": 100.0,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 94.0,
+        "diversity": 87.8,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 92.3
+      },
+      "category_breakdown": {},
+      "rda_flags": [],
+      "priority_rda_flags": [],
+      "generation_ms": 461.5
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 173299,
+          "description": "McDONALD'S, Hotcakes (plain) + Formulated bar, LUNA BAR, NUTZ OVER CHOCOLATE",
+          "category": "Fast Foods + Snacks",
+          "dietary": null,
+          "calories": 577.7,
+          "protein": 20.3,
+          "items": [
+            {
+              "description": "McDONALD'S, Hotcakes (plain)",
+              "serving_g": 165,
+              "calories": 376.2
+            },
+            {
+              "description": "Formulated bar, LUNA BAR, NUTZ OVER CHOCOLATE",
+              "serving_g": 50,
+              "calories": 201.5
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 174988,
+          "description": "Croissants, apple + Parsley, freeze-dried",
+          "category": "Baked Products + Vegetables and Vegetable Products",
+          "dietary": null,
+          "calories": 777.6,
+          "protein": 44.2,
+          "items": [
+            {
+              "description": "Croissants, apple",
+              "serving_g": 208,
+              "calories": 528.3
+            },
+            {
+              "description": "Parsley, freeze-dried",
+              "serving_g": 92,
+              "calories": 249.3
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2705750,
+          "description": "Cheese, Ricotta + Baby Toddler cereal, oatmeal, dry",
+          "category": "Cottage/ricotta cheese + Baby food: cereals",
+          "dietary": null,
+          "calories": 665.7,
+          "protein": 35.3,
+          "items": [
+            {
+              "description": "Cheese, Ricotta",
+              "serving_g": 306,
+              "calories": 452.9
+            },
+            {
+              "description": "Baby Toddler cereal, oatmeal, dry",
+              "serving_g": 54,
+              "calories": 212.8
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 2021.0,
+        "protein": 99.8,
+        "carbs": 263.7,
+        "fat": 70.9,
+        "fiber": 43.6,
+        "sodium": 2037.0,
+        "potassium": 7316.0,
+        "glycemic_load": 118.7
+      },
+      "scores": {
+        "overall": 94.6,
+        "calorie_fit": 99.8,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 78.0,
+        "diversity": 87.0,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 100.0
+      },
+      "category_breakdown": {},
+      "rda_flags": [
+        {
+          "nutrient": "Vitamin D",
+          "actual": 9.1,
+          "target": 15,
+          "percent": 60.7,
+          "threshold": 12.0
+        }
+      ],
+      "priority_rda_flags": [],
+      "generation_ms": 398.2
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 173299,
+          "description": "McDONALD'S, Hotcakes (plain) + Chia seeds, dry, raw + Turtle, green, raw",
+          "category": "Fast Foods + Cereal Grains and Pasta + Finfish and Shellfish Products",
+          "dietary": null,
+          "calories": 555.1,
+          "protein": 66.7,
+          "items": [
+            {
+              "description": "McDONALD'S, Hotcakes (plain)",
+              "serving_g": 165,
+              "calories": 376.2
+            },
+            {
+              "description": "Chia seeds, dry, raw",
+              "serving_g": 100,
+              "calories": 0.0
+            },
+            {
+              "description": "Turtle, green, raw",
+              "serving_g": 201,
+              "calories": 178.9
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 174988,
+          "description": "Croissants, apple + Beans, cannellini, dry + Vitasoy USA Organic Nasoya, Tofu Plus Extra Firm",
+          "category": "Baked Products + Legumes and Legume Products",
+          "dietary": null,
+          "calories": 758.3,
+          "protein": 62.5,
+          "items": [
+            {
+              "description": "Croissants, apple",
+              "serving_g": 208,
+              "calories": 528.3
+            },
+            {
+              "description": "Beans, cannellini, dry",
+              "serving_g": 100,
+              "calories": 0.0
+            },
+            {
+              "description": "Vitasoy USA Organic Nasoya, Tofu Plus Extra Firm",
+              "serving_g": 250,
+              "calories": 230.0
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2707703,
+          "description": "Anisette toast + 1% LOWFAT MILK, STRAWBERRY",
+          "category": "Cookies and brownies + Milk",
+          "dietary": null,
+          "calories": 618.8,
+          "protein": 17.5,
+          "items": [
+            {
+              "description": "Anisette toast",
+              "serving_g": 121,
+              "calories": 451.3
+            },
+            {
+              "description": "1% LOWFAT MILK, STRAWBERRY",
+              "serving_g": 250,
+              "calories": 167.5
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 1932.2,
+        "protein": 146.7,
+        "carbs": 353.3,
+        "fat": 88.7,
+        "fiber": 11.7,
+        "sodium": 1757.0,
+        "potassium": 3114.0,
+        "glycemic_load": 98.2
+      },
+      "scores": {
+        "overall": 96.9,
+        "calorie_fit": 100.0,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 88.0,
+        "diversity": 88.2,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 96.6
+      },
+      "category_breakdown": {},
+      "rda_flags": [
+        {
+          "nutrient": "Vitamin D",
+          "actual": 11.6,
+          "target": 15,
+          "percent": 77.3,
+          "threshold": 12.0
+        }
+      ],
+      "priority_rda_flags": [],
+      "generation_ms": 371.5
+    },
+    {
+      "meals": [
+        {
+          "slot": "breakfast",
+          "fdc_id": 173299,
+          "description": "McDONALD'S, Hotcakes (plain) + Epazote, raw",
+          "category": "Fast Foods + Vegetables and Vegetable Products",
+          "dietary": null,
+          "calories": 554.2,
+          "protein": 13.3,
+          "items": [
+            {
+              "description": "McDONALD'S, Hotcakes (plain)",
+              "serving_g": 208,
+              "calories": 474.2
+            },
+            {
+              "description": "Epazote, raw",
+              "serving_g": 250,
+              "calories": 80.0
+            }
+          ]
+        },
+        {
+          "slot": "lunch",
+          "fdc_id": 174988,
+          "description": "Croissants, apple + Veal, leg, top round, cap off, cutlet, boneless, raw",
+          "category": "Baked Products + Lamb, Veal, and Game Products",
+          "dietary": null,
+          "calories": 777.6,
+          "protein": 66.9,
+          "items": [
+            {
+              "description": "Croissants, apple",
+              "serving_g": 208,
+              "calories": 528.3
+            },
+            {
+              "description": "Veal, leg, top round, cap off, cutlet, boneless, raw",
+              "serving_g": 233,
+              "calories": 249.3
+            }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "fdc_id": 2707902,
+          "description": "Cookie, biscotti + SAUSAGE & CHEESE OMELETS",
+          "category": "Cookies and brownies + Frozen Dinners & Entrees",
+          "dietary": null,
+          "calories": 666.6,
+          "protein": 22.3,
+          "items": [
+            {
+              "description": "Cookie, biscotti",
+              "serving_g": 121,
+              "calories": 451.3
+            },
+            {
+              "description": " SAUSAGE & CHEESE OMELETS",
+              "serving_g": 104,
+              "calories": 215.3
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 1998.4,
+        "protein": 102.5,
+        "carbs": 261.3,
+        "fat": 63.2,
+        "fiber": 19.3,
+        "sodium": 2521.0,
+        "potassium": 3014.0,
+        "glycemic_load": 30.1
+      },
+      "scores": {
+        "overall": 96.7,
+        "calorie_fit": 100.0,
+        "protein_fit": 100.0,
+        "variety": 100.0,
+        "health": 91.1,
+        "diversity": 87.4,
+        "glycemic_load": 100.0,
+        "sodium_potassium": 89.7
+      },
+      "category_breakdown": {},
+      "rda_flags": [
+        {
+          "nutrient": "Vitamin D",
+          "actual": 9.1,
+          "target": 15,
+          "percent": 60.7,
+          "threshold": 12.0
+        }
+      ],
+      "priority_rda_flags": [],
+      "generation_ms": 403.7
     }
   ],
   "scores": [
@@ -5775,7 +5816,14 @@
     92.61,
     95.22,
     94.01,
-    95.19
+    95.19,
+    95.27,
+    96.18,
+    97.72,
+    97.77,
+    94.63,
+    96.85,
+    96.69
   ],
   "generation_times": [
     0.22,
@@ -6924,6 +6972,13 @@
     2.73,
     7.62,
     21.51,
-    6.94
+    6.94,
+    3.86,
+    4.38,
+    3.78,
+    2.71,
+    2.47,
+    2.34,
+    2.49
   ]
 }

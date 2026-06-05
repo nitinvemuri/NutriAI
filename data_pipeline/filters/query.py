@@ -137,7 +137,7 @@ ALLERGEN_KEYWORDS: dict[str, list[str]] = {
         "scallop", "squid", "octopus", "seafood", "shellfish"   
     ],
     "fish": [
-        "fish", "salmon", "tuna", "cod", "tilapia", "halibut", "anchovy","caviar", "roe", "sturgeon", "herring", "grouper", "mahi mahi", "NFS + Escargot"
+        "fish", "salmon", "tuna", "cod", "tilapia", "halibut", "anchovy","caviar", "roe", "sturgeon", "herring", "grouper", "mahi mahi", "NFS + Escargot", "shrimp", "shellfish", "crab", "lobster", "clam", "oyster", "mussel", 
         "sardine", "trout", "bass", "mackerel", "swordfish", "snapper","fldr", "frog", "caviar", "roe", "sturgeon", "herring", "grouper", "CORVINA", "sea bass", "flounder", "sole", "whiting", "pollock", "catfish", "perch", "barramundi", "tilefish", "lingcod", "rockfish", "orange roughy",
         "sea bass", "flounder", "sole", "whiting", "pollock", "catfish", "perch", "barramundi", "tilefish", "lingcod", "rockfish", "orange roughy",
         "bluefish", "albacore", "yellowfin", "bigeye", "skipjack", "black cod", "black sea bass", "kingfish", "spanish mackerel", "wahoo", "cobia", "butterfish", "sablefish", "monkfish", "grenadier", "capelin", "smelt", "surf clam", "geoduck"
@@ -157,6 +157,50 @@ ALLERGEN_KEYWORDS: dict[str, list[str]] = {
     "tree_nuts": ["nut", "nuts", "almond", "walnut", "cashew", "pecan", "pistachio"],
     "soy": ["soy", "tofu", "edamame", "tempeh", "soybean"],
     "gluten": ["wheat", "gluten", "barley", "rye", "bread", "pasta"],
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 1: ALLERGEN CONFIDENCE SCORING
+# ═══════════════════════════════════════════════════════════════════════════════
+ALLERGEN_CONFIDENCE = {
+    "usda_certified": 100,    # From database allergen tags
+    "keyword_match": 80,      # From description keyword search
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 2: TREE NUT SPECIFICITY (expanded from generic "tree_nuts")
+# ═══════════════════════════════════════════════════════════════════════════════
+TREE_NUTS_SPECIFIC = {
+    "almond": ["almond"],
+    "cashew": ["cashew"],
+    "walnut": ["walnut"],
+    "pistachio": ["pistachio"],
+    "pecan": ["pecan"],
+    "hazelnut": ["hazelnut", "filbert"],
+    "macadamia": ["macadamia"],
+    "brazil_nut": ["brazil nut", "brazil"],
+    "pine_nut": ["pine nut", "pinon"],
+}
+
+# Expand tree_nuts in ALLERGEN_KEYWORDS to include all specific nuts
+ALLERGEN_KEYWORDS["tree_nuts"] = [
+    "nut", "nuts", "almond", "walnut", "cashew", "pecan", "pistachio",
+    "hazelnut", "filbert", "macadamia", "brazil nut", "brazil", "pine nut", "pinon"
+]
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 3: ALLERGEN SEVERITY LEVELS
+# ═══════════════════════════════════════════════════════════════════════════════
+ALLERGEN_SEVERITY = {
+    "peanuts": "SEVERE",      # 🔴 High anaphylaxis risk
+    "tree_nuts": "SEVERE",    # 🔴 High anaphylaxis risk
+    "shellfish": "SEVERE",    # 🔴 High anaphylaxis risk
+    "fish": "MODERATE",       # 🟡 Can cause reactions but typically less severe
+    "dairy": "MODERATE",      # 🟡 Intolerance/allergy varies
+    "eggs": "MODERATE",       # 🟡 Intolerance/allergy varies
+    "soy": "MODERATE",        # 🟡 Generally manageable
+    "gluten": "MODERATE",     # 🟡 Intolerance (celiac) vs. preference
+    "meat": "MODERATE",       # 🟡 Dietary preference
 }
 
 GI_OPTIONS = {"low", "high", "any"}
@@ -248,6 +292,100 @@ def get_diet_violations(food: dict, dietary_preference: str | None) -> list[str]
 def food_matches_diet(food: dict, dietary_preference: str | None) -> bool:
     """True when a food passes all tag and keyword checks for a diet."""
     return not get_diet_violations(food, dietary_preference)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 1: GET ALLERGEN DETECTION CONFIDENCE
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def get_allergen_confidence(food: dict, allergen: str) -> dict[str, int | str]:
+    """Return allergen detection method and confidence score."""
+    allergen_lower = allergen.lower().replace(" ", "_")
+    usda_tags = str(food.get("allergens") or "").lower()
+    
+    # Check USDA certified tags first
+    if allergen_lower in usda_tags or allergen.lower() in usda_tags:
+        return {
+            "method": "USDA_CERTIFIED",
+            "confidence": ALLERGEN_CONFIDENCE["usda_certified"],
+            "label": "100% - USDA certified tag"
+        }
+    
+    # Check keyword match in description
+    keywords = ALLERGEN_KEYWORDS.get(allergen_lower, [])
+    desc_lower = str(food.get("description") or "").lower()
+    if any(kw in desc_lower for kw in keywords):
+        return {
+            "method": "KEYWORD_MATCH",
+            "confidence": ALLERGEN_CONFIDENCE["keyword_match"],
+            "label": "80% - keyword detected"
+        }
+    
+    return {
+        "method": "NONE",
+        "confidence": 0,
+        "label": "Not detected"
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 2: GET ALLERGEN SEVERITY INDICATOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def get_allergen_severity(allergen: str) -> dict[str, str]:
+    """Return severity level and emoji indicator."""
+    allergen_lower = allergen.lower().replace(" ", "_")
+    severity = ALLERGEN_SEVERITY.get(allergen_lower, "MODERATE")
+    
+    emoji = "🔴" if severity == "SEVERE" else "🟡"
+    
+    return {
+        "severity": severity,
+        "emoji": emoji,
+        "description": "High anaphylaxis risk" if severity == "SEVERE" else "Manageable/intolerance"
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# FEATURE 3: GET SPECIFIC TREE NUT ALLERGEN
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def get_tree_nuts_options() -> dict[str, list[str]]:
+    """Return all specific tree nut options for granular filtering."""
+    return TREE_NUTS_SPECIFIC
+
+
+def is_tree_nut(allergen: str) -> bool:
+    """Check if allergen is a specific tree nut."""
+    allergen_lower = allergen.lower().replace(" ", "_")
+    return allergen_lower in TREE_NUTS_SPECIFIC
+
+
+def normalize_allergens_with_specificity(allergens: Iterable[str]) -> list[str]:
+    """Normalize allergens, expanding 'tree_nuts' to specific nuts if present."""
+    normalized = []
+    has_generic_tree_nuts = False
+    
+    for allergen in allergens:
+        if allergen is None:
+            continue
+        name = allergen.strip().lower().replace(" ", "_")
+        
+        # Check if it's a specific tree nut
+        if name in TREE_NUTS_SPECIFIC:
+            normalized.append(name)
+        elif name == "tree_nuts":
+            has_generic_tree_nuts = True
+        elif name in ALLOWED_ALLERGENS:
+            normalized.append(name)
+        else:
+            raise ValueError(f"Unsupported allergen '{allergen}'. Supported: {sorted(ALLOWED_ALLERGENS)} or specific tree nuts: {sorted(TREE_NUTS_SPECIFIC.keys())}")
+    
+    # If user selected generic "tree_nuts", expand to all specific nuts
+    if has_generic_tree_nuts:
+        normalized.extend(TREE_NUTS_SPECIFIC.keys())
+    
+    return list(set(normalized))  # Remove duplicates
 
 
 def _build_where_clause(
