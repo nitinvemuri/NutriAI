@@ -1,0 +1,18 @@
+# NutriAI — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Web framework (UI)
+streamlit>=1.35.0
+
+# Data & ML
+numpy>=1.26.0
+pandas>=2.2.0
+faiss-cpu>=1.8.0
+pybloom-live>=4.0.0
+scikit-learn>=1.4.0       # optional: for additional ML techniques
+
+# HTTP
+requests>=2.31.0
+
+# Utilities
+python-dotenv>=1.0.0      # for loading USDA_API_KEY from .env
